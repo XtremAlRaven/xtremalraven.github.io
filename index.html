@@ -28,8 +28,10 @@
 
 <script type="text/javascript">
 	// document.getElementById("debug").innerText= navigator.userAgent;
+	makeaswitch = document.getElementById("makeaswitch")
+	makeaswitch.style.fontSize = document.body.clientWidth / 40;
 	if( navigator.userAgent.includes("Instagram") ){
-  		document.getElementById("makeaswitch").classList.remove("hide");
+  		makeaswitch.classList.remove("hide");
 	}
 </script>
 
