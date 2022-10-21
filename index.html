@@ -19,12 +19,14 @@
 		width: 100%;
 		color:  rgba(0,0,0,.65);
 		/*font-size: calc(15px + 0.390625vw);*/
-		font-size: 20pt;
-		
+		font-size: 40pt;
+		padding-top: 5pt;
+		padding-bottom: 5pt;
 	}
 </style>
 
-<div id="makeaswitch" class="hide">for more payment options натисніть сюди та оберіть Open in Browser ^</div>
+<div id="makeaswitch" class="hide">for more payment options ^<br>
+натисніть сюди та оберіть Open in Browser ^</div>
 <div class="hide">Debug: <span id="debug"></span></div>
 
 
@@ -35,7 +37,7 @@
 	makeaswitch = document.getElementById("makeaswitch")
 	// makeaswitch.style.fontSize = document.body.clientWidth / 40;
 	// makeaswitch.style.fontSize = "16pt"
-	if( navigator.userAgent.includes("Instagram") ){
+	if( navigator.userAgent.includes("Chrome") ){
   		makeaswitch.classList.remove("hide");
 	}
 </script>
