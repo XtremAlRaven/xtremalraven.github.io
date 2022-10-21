@@ -8,19 +8,29 @@
 		border: 0px;
 		height: 100%;
 	}
+	html{
+		font-family: "Open Sans", sans-serif;
+	}
 	.hide{
 		display: none;
 	}
+	#makeaswitch{
+		text-align: right;
+		width: 100%;
+		color:  rgba(0,0,0,.65);
+	}
 </style>
 
-<div id="makeaswitch">for more payment options натисніть сюди та оберіть Open in Browser ^</div>
-<div>Debug: <span id="debug"></span></div>
+<div id="makeaswitch" class="hide">for more payment options натисніть сюди та оберіть Open in Browser ^</div>
+<div class="hide">Debug: <span id="debug"></span></div>
 
-<iframe src="https://bekind.ua/uk/donation?fundId&projectId=5215df1f-bbd6-4216-949f-da45db718460" width="100%" height="1480" allowfullscreen></iframe>
+<iframe src="https://bekind.ua/uk/donation?fundId&projectId=5215df1f-bbd6-4216-949f-da45db718460" width="100%" height="1480"></iframe>
 
 <script type="text/javascript">
-	document.getElementById("debug").innerText= navigator.userAgent;
-	
+	// document.getElementById("debug").innerText= navigator.userAgent;
+	if( navigator.userAgent.includes("Instagram") ){
+  		document.getElementById("makeaswitch").classList.remove("hide");
+	}
 </script>
 
 </body>
