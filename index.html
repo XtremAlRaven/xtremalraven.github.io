@@ -18,6 +18,7 @@
 		text-align: right;
 		width: 100%;
 		color:  rgba(0,0,0,.65);
+		font-size: calc(15px + 0.390625vw);
 	}
 </style>
 
@@ -29,8 +30,9 @@
 <script type="text/javascript">
 	// document.getElementById("debug").innerText= navigator.userAgent;
 	makeaswitch = document.getElementById("makeaswitch")
-	makeaswitch.style.fontSize = document.body.clientWidth / 40;
-	if( navigator.userAgent.includes("Instagram") ){
+	// makeaswitch.style.fontSize = document.body.clientWidth / 40;
+	// makeaswitch.style.fontSize = "16pt"
+	if( navigator.userAgent.includes("Chrome") ){
   		makeaswitch.classList.remove("hide");
 	}
 </script>
