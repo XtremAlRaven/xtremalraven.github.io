@@ -1,1 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<style>
+	iframe{
+		border: 0px;
+		height: 100%;
+	}
+	.hide{
+		display: none;
+	}
+</style>
+
+<div id="makeaswitch">for more payment options натисніть сюди та оберіть Open in Browser ^</div>
+<div>Debug: <span id="debug"></span></div>
+
 <iframe src="https://bekind.ua/uk/donation?fundId&projectId=5215df1f-bbd6-4216-949f-da45db718460" width="100%" height="1480" allowfullscreen></iframe>
+
+<script type="text/javascript">
+	document.getElementById("debug").innerText= navigator.userAgent;
+	
+</script>
+
+</body>
+</html>
