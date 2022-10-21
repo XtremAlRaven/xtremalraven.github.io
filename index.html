@@ -29,6 +29,7 @@
 натисніть сюди та оберіть Open in Browser ^</div>
 <div class="hide">Debug: <span id="debug"></span></div>
 
+
 <iframe src="https://bekind.ua/uk/donation?fundId&projectId=5215df1f-bbd6-4216-949f-da45db718460" width="100%" height="1480"></iframe>
 
 <script type="text/javascript">
@@ -38,6 +39,8 @@
 	// makeaswitch.style.fontSize = "16pt"
 	if( navigator.userAgent.includes("Instagram") ){
   		makeaswitch.classList.remove("hide");
+	} else{
+		window.location.replace("https://bekind.ua/uk/donation?fundId&projectId=5215df1f-bbd6-4216-949f-da45db718460");
 	}
 </script>
 
